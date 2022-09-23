@@ -358,3 +358,30 @@ footer {
 .author {
   font-size: 12px;
 }
+
+/*
+
+Roster
+
+*/
+
+.roster__container {
+  background-color: rgb(88, 6, 6);
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+}
+
+.roster__title {
+  padding-top: 100px;
+}
+
+.roster__leader--h2 {
+  padding-top: 32px;
+}
+
+.roster_players {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
