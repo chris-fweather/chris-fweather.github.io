@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+/* 
+
+Global
+
+
+*/
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+/*
+
+Navigation
+
+*/
+
+.logo {
+  width: 150px;
+  background-color: black;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 32px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: black;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__links--primary {
+  border-radius: 26px;
+  border: 2px solid #ffffff;
+  height: 36px;
+  list-style: none;
+}
+
+.nav__links {
+  list-style: none;
+  padding-left: 16px;
+}
+
+a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+
+a:hover {
+  color: rgb(243, 201, 12);
+}
+
+/*
+
+Header
+
+*/
+
+.header__container {
+  height: calc(100vh - 150px);
+  background-color: rgb(5, 5, 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  padding-right: 80px;
+}
+
+.header__h1 {
+  font-size: 60px;
+}
+
+.header__p1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/*
+
+About
+
+*/
+
+.about__container {
+    background-color: rgb(88, 6, 6);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__title {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding-right: 100px;
+}
+
+.about__pic--pic {
+    width: 650px;
+    height: 450px;
+}
+
+/*
+
+Discord
+
+*/
+
+.discord__container {
+    background-color: rgb(5, 5, 5);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discord__p {
+    padding-bottom: 32px;
+}
+
+.discord__pic--pic {
+    width: 400px;
+}
+
+.discord__btn {
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.discord__btn:hover {
+    color: rgb(5, 121, 15);
+}
+
+/*
+
+Footer
+
+*/
+
+footer {
+  background-color: black;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer__logo {
+  padding-bottom: 32px;
+}
+
+.author {
+  font-size: 12px;
+}
