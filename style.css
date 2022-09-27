@@ -196,6 +196,10 @@ LANDING PAGE __ ABOUT US
     padding-left: 48px;
 }
 
+.about__h1 {
+    font-size: 64px;
+}
+
 .about__p1 {
     font-size: 24px;
     width: 400px;
@@ -206,7 +210,7 @@ LANDING PAGE __ ABOUT US
 }
 
 .about__pic--pic {
-    height: 400px;
+    height: 345px;
 }
 
 
@@ -231,6 +235,10 @@ LANDING PAGE __ DISCORD
     padding-top: 32px;
 }
 
+.discord__h1 {
+    font-size: 64px;
+}
+
 
 /*
 
@@ -253,6 +261,10 @@ LANDING PAGE __ SPONSOR
     flex-direction: column;
     text-align: center;
     padding-left: 48px;
+}
+
+.sponsor__h1 {
+    font-size: 64px;
 }
 
 .sponsor__p1 {
@@ -286,4 +298,243 @@ ROSTER PAGE
 .roster_container {
     background-color: rgb(32, 31, 31);
     height: 100vh;
+}
+
+
+/*
+
+
+MOBILE, LATPOP REPONSE 
+
+
+*/
+
+
+@media (max-width: 1590px) {
+    .header__container {
+        height: calc(100vh - 200px);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__pic {
+        display: flex;
+        justify-content: center;
+        padding-right: 128px;
+        max-height: 300px;
+    }
+
+    .header__pic--pic {
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .header__container {
+        height: calc(100vh - 200px);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__pic {
+        display: flex;
+        justify-content: center;
+        padding-right: 128px;
+        max-height: 300px;
+    }
+
+    .header__pic--pic {
+        max-height: 100%;
+    }
+
+    .about__h1 {
+        font-size: 64px;
+    }
+
+    .about__p1 {
+        font-size: 16px;
+    }
+
+    .about__pic--pic {
+        height: 250px;
+    }
+
+    .sponsor__text {
+        padding-bottom: 32px;
+    }
+
+    .sponsor__h1 {
+        font-size: 64px;
+    }
+
+    .sponsor__p1 {
+        font-size: 16px;
+    }
+
+    .sponsor__pic--pic {
+        height: 200px;
+    }
+}
+
+@media (max-width: 870px) {
+    .logo {
+        height: 125px;
+    }
+
+    .nav__link {
+        display: none;
+    }
+
+    .header__container {
+        height: calc(100vh - 200px);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__pic {
+        display: flex;
+        justify-content: center;
+        max-height: 300px;
+    }
+
+    .header__pic--pic {
+        max-height: 100%;
+    }
+
+    .about__container {
+        flex-direction: column;
+    }
+
+    .about__pic--pic {
+        height: 250px;
+    }
+
+    .about__h1 {
+        font-size: 64px;
+    }
+
+    .about__p1 {
+        font-size: 16px;
+    }
+
+    .sponsor__container {
+        flex-direction: column;
+    }
+
+    .sponsor__text {
+        padding-bottom: 32px;
+    }
+
+    .sponsor__h1 {
+        font-size: 64px;
+    }
+
+    .sponsor__p1 {
+        font-size: 16px;
+    }
+
+    .sponsor__pic--pic {
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .logo {
+        height: 100px;
+    }
+
+    .nav__link {
+        display: none;
+    }
+
+    .header__container {
+        height: calc(100vh - 200px);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__h1 {
+        font-size: 40px;
+    }
+
+    .header__p1 {
+        font-size: 20px;
+    }
+
+    .header__pic {
+        display: flex;
+        justify-content: center;
+        padding-right: 128px;
+        max-height: 300px;
+    }
+
+    .header__pic--pic {
+        height: 175px;
+    }
+
+    .about__container {
+        flex-direction: column;
+    }
+
+    .about__text {
+        padding-right: 48px;
+    }
+
+    .about__pic--pic {
+        padding-right: 16px;
+        height: 200px;
+    }
+
+    .about__h1 {
+        font-size: 40px;
+    }
+
+    .about__p1 {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .sponsor__container {
+        flex-direction: column;
+    }
+
+    .sponsor__text {
+        padding-bottom: 32px;
+        padding-right: 48px;
+    }
+
+    .sponsor__h1 {
+        font-size: 40px;
+    }
+
+    .sponsor__p1 {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .sponsor__pic--pic {
+        height: 150px;
+        padding-right: 48px;
+    }
+
+    .discord__container {
+        flex-direction: column;
+    }
+
+    .discord__h1 {
+        font-size: 36px;
+    }
+
+    .footer__pic--pic {
+        height: 50px;
+    }
+
+    .footer__p1 {
+        font-size: 14px;
+    }
+
+    .footer__author {
+        font-size: 12px;
+    }
 }
