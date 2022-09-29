@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+/*
+
+
+NAV BAR
+
+
+*/
+
+
+.logo {
+    height: 150px;
+    padding-left: 32px;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav__link {
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 32px;
+}
+
+.nav__link--primary {
+    color: rgb(243, 201, 12);
+}
+
+.nav__link--style:hover {
+    color: rgb(243, 201, 12);
+}
+
+.nav__link:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 4px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.nav__link:hover:after {
+	width: 100%;
+	background: rgb(243, 201, 12);
+}
+
+
+/*
+
+
+PLAYER PAGE
+
+
+*/
+
+
+.player__container {
+    background-color: #161616;
+    height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player__page {
+    display: flex;
+    background-color: #161616;
+    margin: 32px 32px;
+    position: relative;
+}
+
+.player__banner--pic {
+    height: 200px;
+    width: 750px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+    justify-content: center;
+    position: relative;
+}
+
+.player__avatar {
+    display: flex;  
+    justify-content: center;
+}
+
+.player__avatar--pic {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    border: 4px solid #161616;
+    position: absolute;
+    top: 100px;
+}
+
+.player__box {
+    height: 500px;
+    width: 750px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+}
+
+.player__information {
+    padding-top: 55px;
+    padding-left: 32px;
+}
+
+li {
+    padding-bottom: 12px;
+}
+
+.player__information--personal {
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.player__information--gaming {
+    list-style: none;
+    padding-top: 32px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.player__information--extra {
+    list-style: none;
+    padding-top: 32px;
+    font-size: 24px;
+    font-weight: bold;
+}

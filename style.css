@@ -292,12 +292,88 @@ ROSTER PAGE
 
 
 #roster {
-    background-color: rgb(32, 31, 31);
+    background:#161616;
+    height: 200vh;
+}
+
+.roster_h1 {
+    padding-top: 48px;
+    font-size: 68px;
+    display: flex;
+    justify-content: center;
+}
+
+.roster_h2 {
+    padding-top: 48px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.roster {
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
 }
 
 .roster_container {
-    background-color: rgb(32, 31, 31);
-    height: 100vh;
+    max-width: 1000px;
+}
+
+.flipcard__container {
+    width: 200px;
+    height: 200px;
+    perspective: 800px;
+    float: left;
+    padding: 12px;
+}
+
+.flipcard__card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.flipcard__container:hover > .flipcard__card {
+    transform: rotateY(180deg);
+}
+
+.flipcard__card--front, .flipcard__card--back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flipcard__card--front {
+    background-image: url(./capybara-square-1.jpg.optimal.jpg);
+}
+
+.flipcard__card--back {
+    background-color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flipcard__player--btn {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 3px 6px;
+}
+
+.flipcard__player--btn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
 }
 
 
