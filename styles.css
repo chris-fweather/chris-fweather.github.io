@@ -24,6 +24,10 @@ p {
     font-size: 16px;
 }
 
+.para__breaker {
+    padding-top: 20px;
+}
+
 button {
     cursor: pointer;
 }
@@ -116,7 +120,7 @@ label {
     width: 100%;
 }
 
-.red {
+.blue {
     color: rgb(22, 188, 215) !important;
 }
 
@@ -363,7 +367,7 @@ label {
     height: 70px;
     border-radius: 50%;
     border: none;
-    background-color: #242424;
+    background-color: rgb(22, 188, 215);
     color: white;
     display: flex;
     justify-content: center;
@@ -444,6 +448,12 @@ nav {
 
 .fa-solid {
     font-size: 20px;
+    text-align: center;
+}
+
+
+.fa-envelope {
+    font-size: 40px;
     text-align: center;
 }
 
@@ -536,15 +546,20 @@ nav {
 */
 
 footer {
-    background-color: rgb(57, 5, 92);
     display: flex;
     padding: 1% 0%;
+    background: url(./assets/background.jpg);
 }
 
 .footer__row {
     flex-direction: column;
     display: flex;
     align-items: center;
+}
+
+.footer__container {
+    padding: 50px 0;
+    width: 100%;
 }
 
 .footer__logo--img {
