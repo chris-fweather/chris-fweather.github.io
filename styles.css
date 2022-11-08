@@ -7,8 +7,13 @@
     color: white;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    position: absolute
 }
 
 li {
@@ -300,6 +305,10 @@ label {
 /*
     LANDING
 */
+
+#landing-page {
+    position: relative;
+}
 
 .astronaut {
     position: absolute;
