@@ -13,7 +13,8 @@ html, body {
 }
 
 body {
-    position: absolute
+    position: absolute;
+    min-width: 100vw;
 }
 
 li {
