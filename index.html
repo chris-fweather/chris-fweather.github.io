@@ -19,29 +19,28 @@
     </script>
 </head>
 
-<body>
+<body onmousemove="moveBackground(event)">
     <section id="landing-page">
         <nav>
             <figure>
                 <img id="personal-logo" src="" alt="">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="" class="
-                    nav__link--anchor
-                    link__hover-effect
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+                      nav__link--anchor
+                      link__hover-effect
                     ">About</a>
-                </li>
                 <li class="nav__link">
                     <a href="#projects" class="
                     nav__link--anchor
                     link__hover-effect
                     ">Projects</a>
                 </li>
-                <li class="nav__link">
-                    <a href="" class="
-                    nav__link--anchor
-                    link__hover-effect
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+                      nav__link--anchor
+                      link__hover-effect
                     ">Contact</a>
                 </li>
             </ul>
@@ -54,7 +53,7 @@
                     strong passion for building web applications with great <b class="blue">user
                     experiences.</b>
                 <p class="header__para  para__breaker">
-                    Here's a bit <b class="blue">about me</b>.
+                    Here's a bit <b class="blue click" onclick="toggleModal()">about me.</b>
                 </p>
                 <div class="social__list">
                     <a href="https://github.com/chris-fweather" target="_blank" class="social__link click">
@@ -66,7 +65,8 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click" onclick="toggleModal()">
+        <button class="mail__btn click" href="#" onclick="toggleModal(); topFunction()">
+            <a href="#"></a>
             <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -78,7 +78,7 @@
                 <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
                 <p class="modal__para">
                     I'm a 23 year-old Australian <b class="blue">frontend software engineer</b> with
-                    a strong passion for developing websites with great <b class="blue">user experiences</b>.
+                    a strong passion for developing websites with great <b class="blue">user experiences.</b>
                 </p>
                 <p class="modal__para">
                     I am currently solving extremely difficult engineering problems with <b class="blue">HTML</b>, <b class="blue">CSS</b>, <b class="blue">JavaScript</b> and <b class="blue">React</b>
@@ -135,12 +135,18 @@
                 <div class="modal__overlay modal__overlay--success">
                     Thanks for the message!
                 </div>
-                <i class="fas fa-times modal__exit click"></i>
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             </div>
         </div>
         <div class="astronaut">
             <img class="astronaut--pic" src="./assets/astronaut.png" alt="">
         </div>
+        <h1 class="shape shape--1">✧</h1>
+        <h1 class="shape shape--2">✧</h1>
+        <h1 class="shape shape--3">✧</h1>
+        <h1 class="shape shape--4">✧</h1>
+        <h1 class="shape shape--5">✧</h1>
+        <h1 class="shape shape--6">✧</h1>
     </section>
 
     <section id="projects">
@@ -240,13 +246,13 @@
                     <img class="footer__logo--img" src="" alt="">
                 </figure>
                 <div class="footer__social--list">
-                    <a href="#" class="footer__social--link
+                    <a href="https://github.com/chris-fweather" target="blank" class="footer__social--link
                     foot
                     link__hover-effect
                     ">
                         GitHub
                     </a>
-                    <a href="#" class="footer__social--link
+                    <a href="#" onclick="toggleModal(); topFunction()" class="footer__social--link 
                     foot
                     link__hover-effect
                     ">
