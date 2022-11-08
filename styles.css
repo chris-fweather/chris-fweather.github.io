@@ -363,6 +363,7 @@ label {
 }
 
 .mail__btn {
+    z-index: 100;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -372,7 +373,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
 }
@@ -410,6 +411,36 @@ label {
     100% {
         transform: translateY(-3px);
     }
+}
+
+.shape {
+    position: absolute;
+    width: 100px;
+    font-size: 75px;
+}
+  .shape--1 {
+    top: 15vh;
+    left: 5vw;
+}
+  .shape--2 {
+    top: 50vh;
+    left: 5vw;
+}
+  .shape--3 {
+    top: 80vh;
+    left: 5vw;
+}
+  .shape--4 {
+    top: 15vh;
+    left: 90vw;
+}
+  .shape--5 {
+    top: 50vh;
+    left: 80vw;
+}
+  .shape--6 {
+    top: 80vh;
+    left: 90vw;
 }
 
 /*
@@ -578,4 +609,102 @@ footer {
 .footer__social--link, 
 .footer__copyright {
     color: white;
+}
+
+/* Half window */
+@media (max-width: 1125px) {
+    .shape {
+        z-index: -1;
+    }
+    .shape {
+        z-index: -1;
+    }
+      .shape--1 {
+        z-index: -1;
+    }
+      .shape--2 {
+        z-index: -1;
+    }
+      .shape--3 {
+        z-index: -1;
+    }
+      .shape--4 {
+        z-index: -1;
+    }
+      .shape--5 {
+        z-index: -1;
+    }
+      .shape--6 {
+        z-index: -1;
+    }
+
+    .astronaut {
+        z-index: -1;
+    }
+  }
+
+/* Small phones, tablets, large smart phones */
+@media (max-width: 768px) {
+    .title {
+      font-size: 80px;
+    }
+
+    .header__para {
+      font-size: 20px;
+    }
+
+    .modal {
+      top: 0;
+      left: 0;
+      transform: none;
+      height: auto;
+      width: 100%;
+      flex-direction: column-reverse;
+      border-radius: 0;
+    }
+    .modal__half {
+      width: 100%;
+    }
+
+    .astronaut {
+        z-index: -1;
+    }
+}
+  
+  /* Small phones */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 52px;
+    }
+
+    .header__para {
+      font-size: 18px;
+    }
+
+    .nav__link:first-child {
+      display: none;
+    }
+
+    .project__description--para {
+      display: none;
+    }
+
+    .project__description {
+      left: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .project__description--sub-title {
+      margin-bottom: 8px;
+    }
+
+    .modal__half {
+      padding: 40px;
+    }
+
+    .astronaut {
+        z-index: -1;
+    }
 }
