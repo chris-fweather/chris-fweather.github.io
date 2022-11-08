@@ -614,32 +614,32 @@ footer {
 /* Half window */
 @media (max-width: 1125px) {
     .shape {
-        z-index: -1;
+        visibility: hidden;
     }
     .shape {
-        z-index: -1;
+        visibility: hidden;
     }
       .shape--1 {
-        z-index: -1;
+        visibility: hidden;
     }
       .shape--2 {
-        z-index: -1;
+        visibility: hidden;
     }
       .shape--3 {
-        z-index: -1;
+        visibility: hidden;
     }
       .shape--4 {
-        z-index: -1;
+        visibility: hidden;
     }
       .shape--5 {
-        z-index: -1;
+        visibility: hidden;
     }
       .shape--6 {
-        z-index: -1;
+        visibility: hidden;
     }
 
     .astronaut {
-        z-index: -1;
+        visibility: hidden;
     }
   }
 
@@ -704,7 +704,7 @@ footer {
       padding: 40px;
     }
 
-    .astronaut {
+    .astronaut--pic {
         z-index: -1;
     }
 }
