@@ -23,10 +23,10 @@ function contact(event) {
     loading.classList += ' modal__overlay--visible'
 
     emailjs.sendForm(
-         "service_mw5im8a",
-         "template_jp9pj9d",
+         "",
+         "",
          event.target,
-         "YcgZSTOSI6PGEcVTc"
+         ""
     ).then(() => {
         loading.classList.remove('modal__overlay--visible')
         success.classList += ' modal__overlay--visible'
